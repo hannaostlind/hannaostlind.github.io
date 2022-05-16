@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+nav {
+    grid-area: na;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #008B78;
+    font-family: sans-serif;
+}
+
+#nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    background-color:#008B78;
+    position: absolute;
+    right: 0px;
+    top: -500px;
+    width: 200px;
+    list-style: none;
+    transition: all 0.5s;
+}
+
+.nav-active {
+    transform: translateY(600px);
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: rgb(5, 4, 3);
+    letter-spacing: 0.1875rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    width: 200px;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#nav-links a:hover {
+    color: white;
+    transition: ease 0.4s;
+}
+
+.burger_line {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(3, 3, 3);
+    margin: 5px;
+    border-radius: 10%;
+    transition: all 0.5s;
+}
+
+.crossed_line #line_2 {
+    opacity: 0;
+}
+
+.crossed_line #line_1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.crossed_line #line_3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+#burger {
+    margin-right: 87.5px;
+    cursor: pointer;
+}
+
+#grid_wrapper {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 200px;
+    grid-template-rows: 100px 350px 800px 100px;
+    grid-template-areas: 
+        "he na"
+        "s1 s1"
+        "s2 s2"
+        "fo fo";
+}
+
+header {
+    grid-area: he;
+    background: #008B78;
+    padding: 16px;
+}
+
+#section_1 {
+    grid-area: s1;
+    background: #97B1AA;
+}
+
+#section_2 {
+    grid-area: s2;
+    background: #946CA6;
+}
+
+#nav-links2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    transition: none;
+    padding: 30px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+#nav-links2 a:hover {
+    color: white;
+}
+
+footer {
+    grid-area: fo;
+    background-color: #796ca6;    
+    bottom: 0;
+    width: 100%;   
+    height: 100px;
+    
+}
+
+#img_schema {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: c;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.85rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+}
+
+.calendar {
+    padding: 0px 0px 15px;
+    width: 100%;
+    height: 600px;
+}
+
+section {
+    padding: 16px;
+}
+
+@media screen and (min-width: 800px) {
+
+    #burger {
+        display: none;
+    }
+
+    #grid_wrapper {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 100px 600px 100px;
+        grid-template-areas: 
+            "he he"
+            "na na"
+            "s1 s2"
+            "fo fo";
+    }
+
+    #nav-links {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        background-color:#603C72;
+        position: absolute;
+        left: 0px;
+        top: 100px;
+        width: 100%;
+        transition: none;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    #nav-links a:hover {
+        color: white;
+        background-color:#603C72;
+        transition: ease 0.4s;
+    }
+
+    section {
+        padding: 32px;
+    }
+
+    #img_schema {
+        width: 100%;
+        height: auto;
+        margin-left: -8px;
+    }
+
+    .calendar {
+        width: 100%;
+        height: 90%;
+    }
+
+    #nav-links2 {
+        grid-area: fo;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        transition: none;
+        text-decoration: none;
+        color: aquamarine;
+    }
+
+    #nav-links2 a{
+        color: black;
+    }
+
+    #nav-links2 a:hover {
+        color: white;
+    }
+
+    .nav-active {
+        transform: none;
+    }
+
+
+}
