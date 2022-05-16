@@ -125,6 +125,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
 }
 
 footer {
@@ -230,7 +231,7 @@ section {
     }
 
     #nav-links2 a {
-        color: rgb(5, 4, 3);
+        color: rgb(0, 0, 0);
     }
 
     #nav-links2 a:hover {
