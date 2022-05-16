@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Koulen', cursive;
     }
 
 nav {
@@ -104,28 +106,28 @@ header {
     background: #946CA6;
 }
 
-#nav-links2 {
+#links2 {
     color: black;
     text-decoration: none;
-    list-style: none;    
-}
-
-#nav-links2 a:hover {
-    color: white;
-}
-
-#nav.links2 a {
-    text-decoration: none;
-    letter-spacing: 0.1875rem;
-    font-weight: bold;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    width: 200px;
-    height: 3rem;
+    list-style: none;
+    background-color: transparent;
+    font-size: 1.5rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
+    font-size: 2rem;
+    text-transform: uppercase;
+    justify-content: space-evenly;
+    padding: 40px 50px 10px;    
+}
+
+#links2 a {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#links2 a:hover {
+    text-decoration: white;
 }
 
 footer {
@@ -224,18 +226,22 @@ section {
         height: 90%;
     }
 
-    #nav-links2 {
+    #links2 {
         color: black;
         text-decoration: none;
         list-style: none;
+        background-color: transparent;
     }
 
-    #nav-links2 a {
+    #links2 a {
         color: rgb(0, 0, 0);
+        background-color: transparent;
+        text-decoration: none;
+        list-style-type: none;
     }
 
-    #nav-links2 a:hover {
-        color: white;
+    #links2 a:hover {
+        text-decoration: white;
     }
 
     .nav-active {
