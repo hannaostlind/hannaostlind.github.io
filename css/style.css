@@ -44,7 +44,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 #nav-links a:hover {
@@ -106,22 +105,26 @@ header {
 }
 
 #nav-links2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    transition: none;
-    padding: 30px;
-    list-style: none;
-    font-weight: bold;
-    font-size: 1rem;
-    text-transform: uppercase;
-    text-decoration: none;
     color: black;
+    text-decoration: none;
+    list-style: none;    
 }
 
 #nav-links2 a:hover {
     color: white;
+}
+
+#nav.links2 a {
+    text-decoration: none;
+    letter-spacing: 0.1875rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    width: 200px;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
@@ -221,21 +224,13 @@ section {
     }
 
     #nav-links2 {
-        grid-area: fo;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        bottom: 0;
-        width: 100%;
-        height: auto;
-        transition: none;
+        color: black;
         text-decoration: none;
-        color: aquamarine;
+        list-style: none;
     }
 
-    #nav-links2 a{
-        color: black;
+    #nav-links2 a {
+        color: rgb(5, 4, 3);
     }
 
     #nav-links2 a:hover {
