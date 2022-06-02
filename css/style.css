@@ -2,14 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
+}
 
+
+/* styling av nav-links */
 nav {
     grid-area: na;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: #FD8B7B;
+    background-color: #f76b8e;
     font-family: sans-serif;
 }
 
@@ -19,7 +21,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 500px;
-    background-color:#FD8B7B;
+    background-color:#f76b8e;
     position: absolute;
     right: 0px;
     top: -500px;
@@ -28,13 +30,15 @@ nav {
     transition: all 0.5s;
 }
 
+/* styling av id på nav-elementet som fått det id:et genom javascriptet  */
 .nav-active {
     transform: translateY(600px);
 }
 
+/* styling för länkarna när de är aktiva i sin column */
 #nav-links a {
     text-decoration: none;
-    color: rgb(5, 4, 3);
+    color: rgb(5, 4, 4);
     letter-spacing: 0.1875rem;
     font-weight: bold;
     font-size: 1.25rem;
@@ -52,6 +56,7 @@ nav {
     transition: ease 0.4s;
 }
 
+/* styling av meny-knappen, vid crossed-line förflyttas varje burger-line inom den specifika class-listan varsin grad/grader medan den ena försvinner för att i sin tur skapa ett kryss. Detta görs när meny-knappen aktiveras med ett knapptryck*/
 .burger_line {
     width: 25px;
     height: 3px;
@@ -77,7 +82,9 @@ nav {
     margin-right: 87.5px;
     cursor: pointer;
 }
+/* slut på styling av meny-knappen*/
 
+/* här påbörjas stylingen av de enskilda kolumnerna, titlar, schema-bilden, storleken på kalendern samt andra listan med länkar när hemsidan inte visas i helskärm. dvs när bredden är mindre än 800px*/
 #grid_wrapper {
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 200px;
@@ -91,7 +98,7 @@ nav {
 
 header {
     grid-area: he;
-    background: #FD8B7B;
+    background: #f76b8e;
     padding: 16px;
 }
 
@@ -174,6 +181,8 @@ h3 {
 section {
     padding: 16px;
 }
+
+/* styling av innehållet när bredden på hemsidan är större än 800px, det mesta av stylingen är detsamma som ovan fast meny-knappen finns ej. en del av innehållet är självklart anpassat för den större bredden på hemsidan vilket kan ses nedan*/
 
 @media screen and (min-width: 800px) {
 
